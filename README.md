@@ -9,8 +9,8 @@
 -  **Editor de texto** Nvim
 -  **Logout menu** Wlogout
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e0d73873-5f80-4043-952c-844e7d1ede4f" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bebfde40-a34d-4756-8c4e-03db2fad3100" />
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/aeadcd6a-627b-419b-b17e-33fd74851116" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/7c283ed1-0d1e-4cb6-a458-44afbe646653" />
 
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d6400adb-8a3a-46b6-b74f-45f272909b71" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/93481f8f-79bf-47b4-b097-0acc207e66fd" />
