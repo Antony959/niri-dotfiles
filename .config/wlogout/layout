@@ -1,4 +1,3 @@
-
     {
       "label": "lock",
       "action": "hyprlock",
@@ -7,13 +6,13 @@
     },
     {
       "label": "reboot",
-      "action": ""loginctl reboot,
+      "action": "loginctl reboot",
       "text": "Reboot",
       "keybind": "r"
     },
     {
       "label": "shutdown",
-      "action": ""loginctl poweroff,
+      "action": "loginctl poweroff",
       "text": "Shutdown",
       "keybind": "s"
     },
