@@ -7,19 +7,19 @@
     },
     {
       "label": "reboot",
-      "action": "systemctl reboot",
+      "action": ""loginctl reboot,
       "text": "Reboot",
       "keybind": "r"
     },
     {
       "label": "shutdown",
-      "action": "systemctl poweroff",
+      "action": ""loginctl poweroff,
       "text": "Shutdown",
       "keybind": "s"
     },
     {
       "label": "logout",
-      "action": "hyprctl dispatch exit",
+      "action": "niri msg action quit",
       "text": "Exit",
       "keybind": "e"
     }
