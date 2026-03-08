@@ -3,7 +3,7 @@
     xkb {
     layout "br"
 }
-        numlock
+    numlock
 }
     mouse {
 }
@@ -51,13 +51,13 @@
 
     spawn-at-startup "waybar"
     spawn-at-startup "gentoo-pipewire-launcher"
-    spawn-sh-at-startup "linux-wallpaperengine --fps 30 --screen-root HDMI-A-1 2501227371"
+    // spawn-sh-at-startup "linux-wallpaperengine --fps 30 --screen-root HDMI-A-1 2501227371"
     spawn-at-startup "~/go/bin/niri-float-sticky"
     spawn-at-startup "mako"
     spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store"
     spawn-at-startup "sh" "-c" "sleep 5 && noisetorch --i"
     spawn-at-startup "dbus-update-activation-environment" "--all"
-
+    spawn-at-startup "awww-daemon"
     hotkey-overlay {
 
 }
@@ -90,10 +90,7 @@
     window-rule {
     match app-id="com.interversehq.qView"
     open-floating true
-}
 
-    overview {
-    backdrop-color "transparent"
 }
 
     layer-rule {
@@ -101,21 +98,31 @@
     place-within-backdrop true
 }
 
+    layer-rule {
+    match namespace="swww-daemon"
+    place-within-backdrop true
+}
+    overview {
+    workspace-shadow {
+    off
+}
+}
     environment {
     QT_QPA_PLATFORMTHEME "qt5ct"
-    
     QT_QPA_PLATFORM "wayland;xcb"
+    TERMINAL "kitty"
 }
 
     binds {
     
 // Aplicativos
-    Mod+Z { spawn "kitty"; }
+    Mod+Z {spawn "kitty"; }
     Mod+D {spawn "fuzzel"; }
     Mod+E {spawn "thunar"; }
     Mod+B {spawn "firefox-bin"; }
     Mod+X {spawn "flatpak" "run" "dev.vencord.Vesktop"; }
-    Mod+Delete {spawn "wlogout"; }
+    Mod+W {spawn ".config/niri/scripts/wallpaper-selector"; }
+    Mod+Delete {spawn "sh" "-c" "wlogout -l ~/.config/wlogout/layout -C ~/.config/wlogout/style.css -b 4"; }
 // Janelas 
     Mod+C repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
@@ -125,7 +132,6 @@
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Print { screenshot; }
-
 // Scripts
     Mod+R {spawn ".config/niri/scripts/launch_waybar.sh"; }
     Mod+V {spawn "sh" "-c" "cliphist list | fuzzel --dmenu --width 60 -p '' | cliphist decode | wl-copy"; }

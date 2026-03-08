@@ -1,19 +1,19 @@
+
 * {
     background-image: none;
     font-size: 20px;
     font-family: "JetBrains Mono NFM";
 }
 
-/* Fundo da tela translúcido */
 window {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 button {
     margin: 15px;
     color: #ffffff;
-    background-color: #000000; /* Preto sólido */
-    border-radius: 0px;        /* Sem cantos arredondados */
+    background-color: #000000;
+    border-radius: 0px;
     border-style: solid;
     border-width: 0px;
     background-repeat: no-repeat;
@@ -23,16 +23,14 @@ button {
     text-shadow: none;
 }
 
-/* Estado de Hover e Foco: Mantém o fundo preto */
 button:hover,
 button:focus {
-    background-color: #000000; /* Agora continua preto igual ao estado normal */
-    background-size: 25%;      /* Mantém o ícone no mesmo tamanho */
+    background-color: #000000;
+    background-size: 25%;
     transition: none;
     outline-style: none;
 }
 
-/* Ícones */
 #logout {
     background-image: image(url("./icons/logout.png"));
 }
@@ -43,6 +41,10 @@ button:focus {
 
 #reboot {
     background-image: image(url("./icons/restart.png"));
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
 }
 
 button span {
