@@ -51,13 +51,16 @@
 
     spawn-at-startup "waybar"
     spawn-at-startup "gentoo-pipewire-launcher"
-    // spawn-sh-at-startup "linux-wallpaperengine --fps 30 --screen-root HDMI-A-1 2501227371"
     spawn-at-startup "~/go/bin/niri-float-sticky"
     spawn-at-startup "mako"
     spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store"
     spawn-at-startup "sh" "-c" "sleep 5 && noisetorch --i"
     spawn-at-startup "dbus-update-activation-environment" "--all"
     spawn-at-startup "awww-daemon"
+    spawn-at-startup "/usr/libexec/polkit-gnome-authentication-agent-1"
+    spawn-at-startup ".config/niri/scripts/ncspot-notify.sh"
+    // spawn-sh-at-startup "linux-wallpaperengine --fps 30 --screen-root HDMI-A-1 2501227371"
+
     hotkey-overlay {
 
 }
