@@ -1,4 +1,5 @@
     input {
+
     keyboard {
     xkb {
     layout "br"
@@ -85,7 +86,16 @@
 
     opacity 1.0
 }
-
+window-rule {
+    match app-id="waypaper"
+    open-floating true
+    
+    min-width 828
+    max-width 828
+    
+    min-height 515
+    max-height 515
+}
     window-rule {
     geometry-corner-radius 1
     clip-to-geometry true
@@ -123,8 +133,8 @@
     Mod+D {spawn "fuzzel"; }
     Mod+E {spawn "thunar"; }
     Mod+B {spawn "firefox-bin"; }
-    Mod+X {spawn "flatpak" "run" "dev.vencord.Vesktop"; }
-    Mod+W {spawn ".config/niri/scripts/wallpaper-selector"; }
+    Mod+X {spawn "vesktop-bin"; }
+    Mod+W {spawn ".local/bin/waypaper"; } //".config/niri/scripts/wallpaper-selector"
     Mod+Delete {spawn "sh" "-c" "wlogout -l ~/.config/wlogout/layout -C ~/.config/wlogout/style.css -b 4"; }
 // Janelas 
     Mod+C repeat=false { toggle-overview; }
@@ -140,6 +150,8 @@
     Mod+V {spawn "sh" "-c" "cliphist list | fuzzel --dmenu --width 60 -p '' | cliphist decode | wl-copy"; }
     Mod+Shift+Q { spawn "sh" "-c" "niri msg -j focused-window | jq -r '.pid | select(. != null)' | xargs -r kill -9"; }
 
+    Mod+Minus { spawn-sh "ddcutil setvcp 10 - 10"; }
+    Mod+Equal { spawn-sh "ddcutil setvcp 10 + 10"; }
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
@@ -215,9 +227,6 @@
     // Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
 
     Mod+Shift+Slash { show-hotkey-overlay; }
 
