@@ -1,0 +1,161 @@
+/* Waypaper theme: preto e branco */
+
+* {
+    all: unset;
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #4a4a4a;
+    font-family: Sans, sans-serif;
+}
+
+window {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+box,
+flowbox,
+scrolledwindow,
+viewport,
+stack,
+revealer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+label {
+    color: #ffffff;
+}
+
+image {
+    background-color: transparent;
+}
+
+button {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 1px;
+    padding: 8px 12px;
+}
+
+button:hover {
+    background-color: #1e1e1e;
+    border-color: #ffffff;
+}
+
+button:active {
+    background-color: #2a2a2a;
+}
+
+entry,
+searchentry {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 1px;
+    padding: 8px 10px;
+}
+
+entry selection,
+searchentry selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+combobox,
+dropdown {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 1px;
+    padding: 6px 10px;
+}
+
+popover,
+menu {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+row {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+row:hover {
+    background-color: #151515;
+}
+
+flowboxchild {
+    background-color: #080808;
+    border: 1px solid #2f2f2f;
+    border-radius: 1px;
+    padding: 6px;
+}
+
+flowboxchild:hover {
+    border-color: #ffffff;
+    background-color: #121212;
+}
+
+flowboxchild:selected {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+flowboxchild:selected label {
+    color: #000000;
+}
+
+separator {
+    background-color: #2a2a2a;
+}
+
+scale trough {
+    background-color: #1a1a1a;
+    border-radius: 1px;
+    min-height: 6px;
+}
+
+scale highlight {
+    background-color: #ffffff;
+    border-radius: 1px;
+}
+
+scale slider {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 1px;
+}
+
+checkbutton check,
+radiobutton radio {
+    background-color: #111111;
+    border: 1px solid #666666;
+}
+
+checkbutton:checked check,
+radiobutton:checked radio {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+scrollbar slider {
+    background-color: #3a3a3a;
+    border-radius: 1px;
+}
+
+scrollbar slider:hover {
+    background-color: #ffffff;
+}
+
+tooltip {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #555555;
+	    border-radius: 1px;
+    padding: 6px;
+}

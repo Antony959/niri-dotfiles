@@ -1,0 +1,108 @@
+{
+  "logo": {
+   "padding": {
+      "left": 0,
+      "top": 1,
+      "right": 3
+    },
+    "color": {
+      //"1": "#73ba25",
+      "2": "\u001b[97m"
+      // "1": "38;2;52;152;219", // Um tom de azul
+    }
+  },
+  "general": {
+    "playerName": ""
+  },
+  "display": {
+    "separator": " ➜  ", 
+    "color": {
+      "separator": "38;2;77;218;255" // o próprio |>
+    },
+    "brightColor": true, 
+    "bar": { 
+      "width": 15 
+      //  "charElapsed": "█",
+      // "charTotal": "░" 
+    },
+    "percent": {
+      "type": 3,
+      "color": {
+        "green": "38;2;77;77;255",
+        "yellow": "yellow",
+        "red": "red"
+      }
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "                 S I S T E M A",
+      "outputColor": "blue" // A cor do texto
+    },
+    	  "break",
+
+    {
+      "type": "os", //tipo que será mostrado a informação
+      "key": "├ ", // o ícone que aparece antes da informação
+      "keyColor": "blue" // cor do ícone
+    },
+    {
+      "type": "kernel",
+      "key": "└󰌢 ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "packages",
+      "key": "└󰏗 ",
+      "keyColor": "blue",
+      "outputColor": "white"
+    },
+     "break",
+    {
+      "type": "custom",
+      "format": "              C O M P U T A D O R",
+      "outputColor": "blue"
+    },
+    "break",
+    {
+      "type": "memory",
+      "key": "├ ",
+      "keyColor": "32"
+    },
+    {
+      "type": "disk",
+      "key": "└󰋊 ",
+      "keyColor": "32",
+      "format": "{1} / {2}" // mostra tipo: 10GB / 50GB
+    },
+    {
+      "type": "cpu",
+      "key": "└ ",
+      "keyColor": "32"
+    },
+    {
+      "type": "gpu",
+      "key": "└󰤽 ",
+      "keyColor": "32"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "                  M Í D I A",
+      "outputColor": "blue"
+    },
+    	  "break",
+
+    {
+      "type": "player", //Mostra o nome do reprodutor de mídia que está ativo
+      "key": "├ ",
+      "outputColor": "33", // Define a cor do nome do player.
+    },
+    {
+      "type": "media", // Mostra a informação da mídia que está tocando
+      "key": "└ ",
+      "outputColor": "33"
+    },
+  ]
+}
